@@ -7,7 +7,7 @@ type SidebarStore = {
 };
 
 export const useSidebar = create<SidebarStore>((set) => ({
-  collapsed: true,
+  collapsed: false,
   onCollapse: () => set({ collapsed: true }),
   onExpand: () => set({ collapsed: false }),
 }));
